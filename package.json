@@ -4,6 +4,9 @@
   "main": "index.js",
   "author": "Mark Smith",
   "license": "MIT",
+  "engines": {
+    "node": "9.2.0"
+  },
   "scripts": {
     "serve": "live-server public/",
     "build:dev": "webpack",
