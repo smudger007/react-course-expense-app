@@ -8,6 +8,7 @@ import './styles/styles.scss';
 import { addExpense } from './actions/expenses';
 import { setTextFilter, sortByAmount } from './actions/filters';
 import getVisibleExpenses from './selectors/expenses';
+import './firebase/firebase';
 
 const store = configStore();
 
