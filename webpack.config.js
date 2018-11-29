@@ -4,15 +4,17 @@ const webpack = require('webpack');
 
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
+console.log('environment is ', process.env.NODE_ENV);
+
 if (process.env.NODE_ENV === 'test') {
-    require('dotenv').config({ path:'env.test'});
+    require('dotenv').config({ path:'.env.test'});
 } else if (process.env.NODE_ENV === 'development') {
-    require('dotenv').config({ path:'env.development'});
+    require('dotenv').config({ path:'.env.development'});
 }
 
 module.exports = (env) => {
     
-    console.log('env is ', env);
+    console.log('hello env is ', env);
     const isProduction = env === 'production';
     const CSSExtract = new ExrtactTextPlugin('styles.css');
 
