@@ -15,3 +15,8 @@ const database = firebase.database();
 
 export { firebase, database as default };
 
+// // database.ref().update({
+// //   stressLevel: 9,
+// //   'job/company': 'Amazon',
+// //   'location/city': 'Seattle'
+// // });
